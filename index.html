@@ -3,25 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahsan's Website</title>
+  <title>Ahsan's Stunning Website</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2b5876);
       color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
       text-align: center;
-      margin-top: 20%;
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 0px 0px 10px #00ffe0;
     }
-    h1 {
-      font-size: 45px;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 0;
     }
-    p {
-      font-size: 20px;
+
+    nav a {
+      color: #00ffe0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      text-shadow: 0 0 10px #00ffe0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      text-shadow: 0px 0px 20px #00ffe0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #dcdcdc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #00ffe0;
+      color: #111;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #111;
+      transform: scale(1.05);
+    }
+
+    .about, .contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h2, .contact h2 {
+      color: #00ffe0;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #00ffe0;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Ahsan's Website 💻</h1>
-  <p>This website is now live on GitHub Pages!</p>
+
+  <header>
+    Ahsan's Awesome Website
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to My World 🌍</h1>
+    <p>Beautiful, creative, and full of possibilities — designed by Ahsan!</p>
+    <button class="btn">Explore Now</button>
+  </section>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I'm Ahsan, a creative web designer learning and exploring new digital ideas every day!</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out at <a href="mailto:ahsan@example.com">ahsan@example.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Ahsan | Built with 💙 and HTML & CSS
+  </footer>
+
 </body>
 </html>
